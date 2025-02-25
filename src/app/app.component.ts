@@ -3,9 +3,14 @@ import { Component } from '@angular/core';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
-  standalone: false,
-  styleUrl: './app.component.css'
+  styleUrls: ['./app.component.css'],
+  standalone: false
 })
 export class AppComponent {
   title = 'angular-material';
+  curtidas = 0;
+
+  incrementarCurtida() {
+    this.curtidas++;
+  }
 }
